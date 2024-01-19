@@ -1,40 +1,40 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import Layout from './Layout';
 import './App.css';
 import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import Home from './Home';
-// import About from './About' ;
-// import Contact from './Contact';
 
-// const Home = () => <div>Home Page</div>;
-// const About = () => <div>About Page</div>;
+import Header from "./components/Header";
+import {BrowserRouter as Router} from "react-router-dom";
+import AnimatedRoutes from './AnimatedRoutes';
 
 function App() {
+
   return (
-    // <Router>
-    //   <Switch>
-    //     <Route path="/" exact component={Home} />
-    //     <Route path="/about" exact component={About} />
-    //     <Route path="/contact" exact component={Contact} />
-    //   </Switch>
-    // </Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <AnimatedRoutes />
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+
+      {/* <div className='cushion'>
+        <div className='main-body'>
+          <img src={logo} className="App-logo" alt="logo" />
+            <p>
+              Edit <code>src/App.js</code> and save to reload
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+        </div>
+      </div> */}
