@@ -18,10 +18,9 @@ function AnimatedRoutes() {
                 <Route path="/ReactApp" element={
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    exit={{opacity:0}}
-                    transition={{duration:0.3}}
+                    initial={{ width: "100%", x: -window.innerWidth }}
+                    animate={{ x: 0 }}
+                    exit={{ x: window.innerWidth, transition: { duration:0.3 }}}
                     >
                         <Home />
                     </motion.div> 
@@ -29,10 +28,9 @@ function AnimatedRoutes() {
                 <Route path="/ReactApp/about" element={                    
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    exit={{opacity:0}}
-                    transition={{duration:0.3}}
+                    initial={{ width: "100%", x: -window.innerWidth }}
+                    animate={{ x: 0 }}
+                    exit={{ x: window.innerWidth, transition: { duration:0.3 }}}
                     >
                         <About />
                     </motion.div> 
@@ -40,10 +38,9 @@ function AnimatedRoutes() {
                 <Route path="/ReactApp/contact" element={
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}
-                    exit={{opacity:0}}
-                    transition={{duration:0.3}}
+                    initial={{ width: "100%", x: -window.innerWidth }}
+                    animate={{ x: 0 }}
+                    exit={{ x: window.innerWidth, transition: { duration:0.3 }}}
                     >
                         <Contact />
                     </motion.div> 
