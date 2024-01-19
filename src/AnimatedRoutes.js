@@ -15,7 +15,7 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path="/" element={
+                <Route path="/ReactTest" element={
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
                     initial={{opacity:0}}
@@ -26,7 +26,7 @@ function AnimatedRoutes() {
                         <Home />
                     </motion.div> 
                 }/>
-                <Route path="/about" element={                    
+                <Route path="/ReactTest/about" element={                    
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
                     initial={{opacity:0}}
@@ -37,7 +37,7 @@ function AnimatedRoutes() {
                         <About />
                     </motion.div> 
                 }/>
-                <Route path="/contact" element={
+                <Route path="/ReactTest/contact" element={
                     <motion.div
                     style={{ 'background-color': 'red','color':'blue' }}
                     initial={{opacity:0}}
