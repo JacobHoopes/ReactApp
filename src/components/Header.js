@@ -8,13 +8,13 @@ const Header = () => {
             <nav>
                 <div style={{ display: 'flex'}}>
                     <div class="flex-item" style={{ flex: 2}}>
-                        <Link to="/ReactTest/">Home</Link>
+                        <Link to="/ReactApp/">Home</Link>
                     </div>
                     <div class="flex-item" style={{ flex: 2}}>
-                        <Link to="/ReactTest/about">About</Link>
+                        <Link to="/ReactApp/about">About</Link>
                     </div>
                     <div class="flex-item" style={{ flex: 2}}>
-                        <Link to="/ReactTest/contact">Contact</Link>
+                        <Link to="/ReactApp/contact">Contact</Link>
                     </div>
                 </div>
             </nav>
